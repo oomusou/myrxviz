@@ -39,7 +39,7 @@ export default class extends Component {
     return (
       <div className="container">
         <Head>
-          <title>RxJS Playground</title>
+          <title>RxJS Playground 1.0</title>
           <meta
             name="description"
             content="Visualize any Rx Observable, and export SVG of the marble diagram."
