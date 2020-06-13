@@ -200,14 +200,13 @@ export default class extends Component {
             display: flex;
             flex-direction: column;
             flex: 1;
-            min-width: 0; /* https://stackoverflow.com/q/44192057/247243 */
+            min-width: 0;
           }
           .editor-and-output {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             min-width: 0;
-            /* https://stackoverflow.com/q/44192057/247243 */
           }
         ` }</style>
       </Layout>
