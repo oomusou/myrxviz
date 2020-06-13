@@ -68,10 +68,11 @@ export default class extends Component {
         <style jsx>{`
           .editor {
             flex: 1 0 50%;
-            overflow: auto;
+            overflow-y: auto;
             background-color: #282c34;
             padding-top: 6px;
             font-size: 18px;
+            height: 100px
           }
         `}</style>
         <style jsx global>{`${codeMirrorStyles}\n${monokaiStyles}`}</style>

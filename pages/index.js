@@ -191,11 +191,7 @@ export default class extends Component {
             onShare={ this.onShare }
           />
           <div className="editor-and-output">
-            <Editor
-              value={ code }
-              onChange={ this.onCodeChange }
-              onCmdEnter={ this.onVisualize }
-            />
+            <Editor value={ code } onChange={ this.onCodeChange } onCmdEnter={ this.onVisualize }/>
             <Output vizParams={ vizParams } onSvgStable={ this.onSvgStable }/>
           </div>
         </main>
