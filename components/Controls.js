@@ -143,19 +143,17 @@ export default class extends Component {
 
     const { copiedSvg } = this.state;
 
-    return ''
-
-    // return (
-    //   <Button
-    //     type="secondary"
-    //     size={this.getButtonSize()}
-    //     disabled={copiedSvg}
-    //     icon={copiedSvg ? checkIcon : copyIcon}
-    //     text={copiedSvg ? 'SVG copied' : 'Copy SVG'}
-    //     style={{ width: 135 }}
-    //     onClick={this.onCopySvg}
-    //   />
-    // );
+    return (
+      <Button
+        type="secondary"
+        size={this.getButtonSize()}
+        disabled={copiedSvg}
+        icon={copiedSvg ? checkIcon : copyIcon}
+        text={copiedSvg ? 'SVG copied' : 'Copy SVG'}
+        style={{ width: 135 }}
+        onClick={this.onCopySvg}
+      />
+    );
   }
 
   onCopySvg = () => {
@@ -183,31 +181,29 @@ export default class extends Component {
 
     const { shareState } = this.state;
 
-    return ''
-
-    // return (
-    //   <Button
-    //     type="secondary"
-    //     size={this.getButtonSize()}
-    //     disabled={shareState !== 'ready'}
-    //     icon={
-    //       shareState === 'error'
-    //         ? alertIcon
-    //         : shareState === 'shared'
-    //           ? checkIcon
-    //           : shareIcon
-    //     }
-    //     text={
-    //       shareState === 'error'
-    //         ? 'Failed'
-    //         : shareState === 'shared'
-    //           ? 'Link copied'
-    //           : 'Share link'
-    //     }
-    //     style={{ width: 130, marginLeft: 15 }}
-    //     onClick={this.onShare}
-    //   />
-    // );
+    return (
+      <Button
+        type="secondary"
+        size={this.getButtonSize()}
+        disabled={shareState !== 'ready'}
+        icon={
+          shareState === 'error'
+            ? alertIcon
+            : shareState === 'shared'
+              ? checkIcon
+              : shareIcon
+        }
+        text={
+          shareState === 'error'
+            ? 'Failed'
+            : shareState === 'shared'
+              ? 'Link copied'
+              : 'Share link'
+        }
+        style={{ width: 130, marginLeft: 15 }}
+        onClick={this.onShare}
+      />
+    );
   }
 
   onShare = () => {
@@ -255,12 +251,6 @@ export default class extends Component {
                     {this.renderTimeWindowInput()}
                     {this.renderVisualizeButton()}
                   </form>
-                </div>
-                <div className="inner-container">
-                  <div className="second-inner-container">
-                    {this.renderCopySvgButton()}
-                    {this.renderShareButton()}
-                  </div>
                 </div>
                 <style jsx>{`
                   .container {

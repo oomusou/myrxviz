@@ -71,6 +71,7 @@ export default class extends Component {
             overflow: auto;
             background-color: #282c34;
             padding-top: 6px;
+            font-size: 18px;
           }
         `}</style>
         <style jsx global>{`${codeMirrorStyles}\n${monokaiStyles}`}</style>
